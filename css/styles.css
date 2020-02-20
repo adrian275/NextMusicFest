@@ -1,0 +1,53 @@
+.main-content {
+    margin: 0 auto;
+}
+
+.banner {
+    opacity: 75%;
+}
+
+.dark-background {
+    background-color: #101624;
+}
+.festival-img {
+/*     background-image: url('https://images.pexels.com/photos/1763067/pexels-photo-1763067.jpeg?cs=srgb&dl=silhouette-of-people-in-front-of-stage-1763067.jpg&fm=jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+ */
+}
+
+.header-background {
+    /* background-color: #101624; */
+}
+
+span:hover {
+    color: dodgerblue;
+}
+
+.header-unit {
+    height: 150px;
+    border-right:none;
+    border-left: none;
+    position: relative;
+    padding: 20px;
+}
+#video-container {
+    position: absolute;
+}
+#video-container {
+    top:0;
+    left:0%;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+video {
+    position:absolute;
+    z-index:0;
+}
+video.fillWidth {
+    width: 100%;
+}

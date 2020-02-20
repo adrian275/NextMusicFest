@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="103px" height="39px" viewBox="0 0 103 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="XS" transform="translate(-8.000000, -18.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(8.000000, 9.000000)">
+                <g id="Group-2">
+                    <text id="Music-Fest" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="19" font-weight="normal">
+                        <tspan x="50" y="24">Music </tspan>
+                        <tspan x="50" y="46">Fest</tspan>
+                    </text>
+                    <text id="?" font-family="AustieBostArrowMania, Austie Bost Arrow Mania" font-size="60" font-weight="normal">
+                        <tspan x="0" y="45">?</tspan>
+                    </text>
+                    <text id="Next" font-family="Avenir-Black, Avenir" font-size="11" font-weight="700">
+                        <tspan x="5" y="30">Next</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
