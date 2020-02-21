@@ -1,88 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />   
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css"/>
-    <title>NuCamp: A Better Way To Camp</title>
-</head>
-<div class="header-unit" style="margin-bottom: 800px;">
-    <header class="fixed-top dark-background banner">   
-        <div class="container p-5">
-            <div class="d-flex h-100 text-center">
-                <div class="w-100 text-white">
-                    <img class="pull-left" src="img/NextMusicFest_logo.svg" height="90" width="154" alt="">
-                    <nav class="navbar navbar-expand-sm pull-right navbar-dark sticky-top">
-                        <div class="container">
-                            <div class="col">
-                                <div class="collapse navbar-collapse pull-right" id="nucampNavbar">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
-                                        <li><a data-toggle="modal" data-target="#loginModal">
-                                            <span class="navbar-text ml-auto">
-                                                <i class="fa fa-sign-in fa-2x nav-item"></i>
-                                            </span>
-                                        </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <button class="navbar-toggler bg-xs-light bg-md-dark" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </div>
-                    </nav>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/styles.css"/>
+        <title>Next Music Fest</title>
+    </head>
+    <body class="dark-background">
+    <div class="w-75 mx-auto mb-5 fixed">
+        <img class="ml-4 pull-left" src="img/NextMusicFest_logo.svg" height="108" width="183" alt="">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container">
+                <div class="col">
+                    <div class="collapse navbar-collapse pull-right" id="NextMusicFestNavBar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                            <li><a data-toggle="modal" data-target="#loginModal">
+                                <span class="navbar-text ml-auto">
+                                    <i class="fa fa-sign-in fa-2x nav-item"></i>
+                                </span>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <button class="navbar-toggler button-background" type="button" data-toggle="collapse" data-target="#NextMusicFestNavBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-        </div>  
-    </header>
-    <div id="video-container h-100 w-100" style="z-index: -1;">
-        <video autoplay muted loop class="fillwidth">
-            <source src="video/video.mp4" type="video/mp4"> 
-            Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
-    </div><!-- end video-container -->
-   
-</div><!-- end .header-unit -->
-
-<body class="dark-background">
-    <!-- <div class="col-12 festival-img mx-auto img-fluid" style="height: 1000px">
-    </div> -->
-    
-          <!-- <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg">
-          <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
-          <source src="http://techslides.com/demos/sample-videos/small.3gp" type="video/3gp"> -->
-          <!-- <img src=" http://placehold.it/350x150" alt="test alt img" /> -->
-    <div class="containers">
-    <div class="card m-4 p-5">
-        <h5 class="card-title display-4">ACL</h5>
-        <a data-flickr-embed="true" href="https://www.flickr.com/photos/kutxaustintx/30110185821/in/photolist-MSJzdR-ztbB2u-pmB26x-My5HoS-aoY5yc-62hpKp-8HGMqD-8JVXQo-zugqg8-yrz45M-gRR6xM-pCzG3p-5q2BUM-77dmNy-pkBdZD-7fcea-5pHW6n-2kqvFN-pA5VvC-74ZUc5-z8npBb-z8oDHy-zdbEPf-yxKity-anTMMq-oKEuPX-z8syuR-pBQaGr-z8tQAM-54X16-yxKrbC-zd9LyC-7et5t-z8oLMy-apisGb-djbkxX-75iEn3-yxJqkG-7fce9-djbk1S-gLotHw-54WGF-5ezQp-z8nEbm-54WdH-zqQJ6v-CzyvaV-M3D5WF-gNccK9-biGZjF" title="Austin City Limits Music Festival 2016"><img src="https://live.staticflickr.com/7513/30110185821_20e8e44329_w.jpg" width="400" height="270" alt="Austin City Limits Music Festival 2016"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </nav>
+    </div>
+        <div id="video-container">
+            <video autoplay loop class="fillWidth">
+                <source src="video/video.mp4" type="video/mp4"/>
+                Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
         </div>
-      </div>
-      <div class="card m-4 p-5">
-        <h5 class="card-title display-4">Coachella</h5>
-        <a data-flickr-embed="true" href="https://www.flickr.com/photos/kutxaustintx/30110185821/in/photolist-MSJzdR-ztbB2u-pmB26x-My5HoS-aoY5yc-62hpKp-8HGMqD-8JVXQo-zugqg8-yrz45M-gRR6xM-pCzG3p-5q2BUM-77dmNy-pkBdZD-7fcea-5pHW6n-2kqvFN-pA5VvC-74ZUc5-z8npBb-z8oDHy-zdbEPf-yxKity-anTMMq-oKEuPX-z8syuR-pBQaGr-z8tQAM-54X16-yxKrbC-zd9LyC-7et5t-z8oLMy-apisGb-djbkxX-75iEn3-yxJqkG-7fce9-djbk1S-gLotHw-54WGF-5ezQp-z8nEbm-54WdH-zqQJ6v-CzyvaV-M3D5WF-gNccK9-biGZjF" title="Austin City Limits Music Festival 2016"><img src="https://live.staticflickr.com/7513/30110185821_20e8e44329_w.jpg" width="400" height="270" alt="Austin City Limits Music Festival 2016"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>  
-</body>
-<footer>
+    </div>
+    <div class="info-container w-75 mx-auto pattern">
+        <h1 class="display-1">Find</h1>
+    </div>
+    <div class="info-container w-75 mx-auto pattern funkyred-background ">
+        <h1 class="display-2">Your</h1>
+    </div>
+    <div class="info-container w-75 mx-auto pattern">
+        <h1 class="display-3">Next</h1>
+    </div>
+    <div class="info-container w-75 mx-auto pattern funkyblue-background ">
+        <h1 class="display-2">Music</h1>
+    </div>
+    <div class="info-container w-75 mx-auto pattern">
+        <h1 class="display-2">Destination</h1>
+    </div>
+    <div class="fest-box">
+        <div class="card mb-4 p-3 gradient-yellow " style="width: 100%;">
+            <img class="card-img-top" src="" alt="">
+            <div class="card-body">
+              <h5 class="card-title display-4">ACL</h5>
+              <p class="card-text">The Austin City Limits (ACL) Music Festival is an annual music festival held in Zilker Park in Austin, Texas on two consecutive three-day weekends. Inspired by the KLRU/PBS music series of the same name, the festival is produced by Austin-based company C3 Presents, which also produces Lollapalooza.[1] The reputation of the ACL television show helped contribute to the success of the first festival.
 
-</footer>
-    <script src="js/scripts.js"></script>
+                The ACL Music Festival has eight stages where musical groups from genres including rock, indie, country, folk, electronic and hip hop perform for fans. The concerts continue from 10 AM to 10 PM on Friday, Saturday, and Sunday during the festival with various stages spread out in the park. Approximately 450,000 people attend the festival each year.[2] In addition to the music performances, there are food and drinks, an art market, a kids area for families, and other activities for attendees.
+                
+                Founded in 2002, the festival began as a one-weekend event and remained as such through the 2012 date. On August 16, 2012, Austin City Council members voted unanimously to allow the Austin City Limits Music Festival to expand to two consecutive weekends beginning in 2013.[3]</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Austin, TX</li>
+              <li class="list-group-item">Attendees: 100K</li>
+              <li class="list-group-item">Next Event: October 4, 2020</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card mb-4 p-3" style="width: 100%;">
+            <img class="card-img-top" src="" alt="">
+            <div class="card-body">
+              <h5 class="card-title display-4">Coachella</h5>
+              <p class="card-text">The Coachella Valley Music and Arts Festival (commonly called Coachella or the Coachella Festival) is an annual music and arts festival held at the Empire Polo Club in Indio, California, in the Coachella Valley in the Colorado Desert. It was co-founded by Paul Tollett and Rick Van Santen in 1999, and is organized by Goldenvoice, a subsidiary of AEG Presents.[1] The event features musical artists from many genres of music, including rock, pop, indie, hip hop and electronic dance music, as well as art installations and sculptures. Across the grounds, several stages continuously host live music.
+
+                The festival's origins trace back to a 1993 concert that Pearl Jam performed at the Empire Polo Club while boycotting venues controlled by Ticketmaster. The show validated the site's viability for hosting large events, leading to the inaugural Coachella Festival being held over the course of two days in October 1999, three months after Woodstock '99. After no event was held in 2000, Coachella returned on an annual basis beginning in April 2001 as a single-day event. In 2002, the festival reverted to a two-day format. Coachella was expanded to a third day in 2007 and eventually a second weekend in 2012; it is now held on consecutive three-day weekends in April, with the same lineup each weekend. Organizers began permitting spectators to camp on the grounds in 2003, one of several expansions and additions in the festival's history.
+                
+                Coachella showcases popular and established musical artists as well as emerging artists and reunited groups. It is one of the largest, most famous, and most profitable music festivals in the United States and the world.[2][3] Each Coachella staged from 2013 to 2015 set new records for festival attendance and gross revenues. The 2017 festival was attended by 250,000 people and grossed $114.6 million. Coachella's success led to Goldenvoice establishing additional music festivals at the site, including the annual Stagecoach country music festival beginning in 2007, the Big 4 thrash metal festival in 2011, and the classic rock-oriented Desert Trip in 2016.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Indio, CA</li>
+              <li class="list-group-item">Attendees: 150K+</li>
+              <li class="list-group-item">Next Event: April 19, 2020</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+    </div>
+ 
+    </body>
+        <script src="js/scripts.js"></script>
+    <footer>
+    </footer>
 </html>

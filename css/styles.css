@@ -1,53 +1,78 @@
-.main-content {
+.header-logo {
+top: 0%;
+position: absolute;
+width: 100%;
+z-index: 10;
+}
+
+.info-container {
+    position: relative;
+    margin: 30px 0px;
+    width:90%;
+    background-color: #2A363B;
+    border-radius: 10px;
+    opacity: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pattern {
+    height: 150px;
+}
+
+.fest-box {
+    margin-top: 50rem;
+    width: 75%;
+    height: 40rem;
     margin: 0 auto;
+    border-radius: 10px;
+}
+
+.info-container h1 {
+    color: white;
+    font-family: helvetica;
+    padding: 1rem;
+}
+
+.dark-background {
+    background-color: #363636;
+}
+
+.funkyred-background {
+    background-color: #E8175D;
+}
+
+.funkyblue-background {
+    background-color: #2F9599;
+}
+
+.gradient-yellow {
+    background-color: #9DE0AD`;
+    
+    /* background-image: linear-gradient(to right, #E5FCC2,#9DE0AD,#45ADA8,#547980,#594F4F); */
+}
+
+.transparent {
+    background-color: transparent !important;
 }
 
 .banner {
     opacity: 75%;
 }
 
-.dark-background {
-    background-color: #101624;
-}
-.festival-img {
-/*     background-image: url('https://images.pexels.com/photos/1763067/pexels-photo-1763067.jpeg?cs=srgb&dl=silhouette-of-people-in-front-of-stage-1763067.jpg&fm=jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
- */
-}
-
-.header-background {
-    /* background-color: #101624; */
-}
-
-span:hover {
-    color: dodgerblue;
-}
-
-.header-unit {
-    height: 150px;
-    border-right:none;
-    border-left: none;
-    position: relative;
-    padding: 20px;
-}
 #video-container {
-    position: absolute;
-}
-#video-container {
-    top:0;
+    top:0%;
     left:0%;
-    height:100%;
-    width:100%;
-    overflow: hidden;
-    margin: 0 auto;
+    position: absolute;
+    width:100%; 
 }
+
 video {
     position:absolute;
-    z-index:0;
+    z-index:-1;
+
 }
 video.fillWidth {
-    width: 100%;
+    width: 100%; 
 }
