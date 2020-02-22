@@ -1,0 +1,16 @@
+[
+ {
+    "id":"1", 
+    "name":"ACL", 
+    "attendees":"150,000", 
+    "event":"10/03/2020", 
+    "location":"Austin, TX"
+ },
+ {
+    "id":"2", 
+    "name":"Coachella", 
+    "attendees":"250,000", 
+    "event":"04/15/2020", 
+    "location":"Indio, CA"
+ }
+]
