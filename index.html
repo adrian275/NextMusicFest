@@ -14,10 +14,8 @@
         <link rel="stylesheet" href="css/styles.css"/>
         <title>Next Music Fest</title>
     </head>
-    <body class="dark-background" onload="showInfo()">
-    <div class="w-75 mx-auto mb-5 fixed">
-        <img class="ml-4 pull-left" src="img/NextMusicFest_logo.svg" height="108" width="183" alt="">
-        <nav class="navbar navbar-expand-sm navbar-dark">
+    <body class="dark-background" onload="showFestivalInfo()">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top top-banner banner" style="background-color: black;">
             <div class="container">
                 <div class="col">
                     <div class="collapse navbar-collapse pull-right" id="NextMusicFestNavBar">
@@ -39,13 +37,18 @@
                 </button>
             </div>
         </nav>
+    <div class="w-75 mx-auto d-flex align-items-center">
+        <img class="ml-5 mt-2 pull-left fixed-top" src="img/NextMusicFest_logo.svg" height="108" width="183" alt="">
     </div>
         <div id="video-container">
-            <video autoplay loop class="fillWidth">
+            <video autoplay loop class="fillWidth fixed-top">
                 <source src="video/video.mp4" type="video/mp4"/>
                 Your browser does not support the video tag. I suggest you upgrade your browser.
             </video>
         </div>
+    </div>
+    <div class="w-75" style="height: 125px;">
+        
     </div>
     <div class="info-container w-75 mx-auto pattern">
         <h1 class="display-1">Find</h1>
@@ -60,21 +63,29 @@
         <h1 class="display-2">Music</h1>
     </div>
     <div class="info-container w-75 mx-auto pattern">
-        <h1 class="display-2">Destination</h1>
+        <h1 class="display-2">Experience</h1>
     </div>
+    <div class="dark-background background-fest rock-out-img fill">
+    <nav class="navbar navbar-expand-sm py-4">
+    <div class="container">
+        <div class="col-12">
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a class="" href="#"><span class="display-4 mr-3">Upcoming</span></a></li>
+            <li class="nav-item"><a class="nav-link" href=""><span class="display-4 mr-3">State</span></a></li>
+            <li class="nav-item"><a class="nav-link" href=""><span class="display-4 mr-3">Genre</span></a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
     <div class="fest-box">
-        <div id="animal-info">
-
+        <div id="festival-info">
         </div> 
     </div>
-    
+</div>
     </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
-    <script src="data.json"></script>
         <script>
-                        var animalContainer = document.getElementById("animal-info");
-            var btn = document.getElementById("btn");
-            var showInfo = function(){
+            var festivalContainer = document.getElementById("festival-info");
+            var showFestivalInfo = function(){
                 var ourRequest = new XMLHttpRequest();
             ourRequest.open('GET', 'js/data.json');
             ourRequest.onload = function() {
@@ -83,32 +94,29 @@
             };  
             ourRequest.send();
             };
-            
             function renderHTML(data) {
-        var htmlString = "";
-        for (i = 0; i < data.length; i++) {
+            var htmlString = "";
+            for (i = 0; i < data.length; i++) {
             htmlString += '<div class="card mb-4 p-3" style="width: 100%;">'
             htmlString += '<img class="card-img-top" src="" alt="">'
             htmlString += '<div class="card-body">'
             htmlString += '<h5 class="card-title display-4">' + data[i].name + '</h5>'
             htmlString += '<p class="card-text">Description Here</p></div>'
             htmlString += '<ul class="list-group list-group-flush">'
-            htmlString += '<li class="list-group-item">' + 'Location:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + data[i].location + '</li>'
-            htmlString += '<li class="list-group-item">' + 'Attendees:&nbsp;&nbsp;&nbsp;' + data[i].attendees + '</li>'
-            htmlString += '<li class="list-group-item">' + 'Next Event:&nbsp;&nbsp;' + data[i].event + '</li>'
+            htmlString += '<li class="list-group-item bg-transparent">' + 'Location:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + data[i].location + '</li>'
+            htmlString += '<li class="list-group-item bg-transparent">' + 'Attendees:&nbsp;&nbsp;&nbsp;' + data[i].attendees + '</li>'
+            htmlString += '<li class="list-group-item bg-transparent">' + 'Next Event:&nbsp;&nbsp;' + data[i].event + '</li>'
             htmlString += '</ul>'
             htmlString += '<div class="card-body">'
             htmlString += '<a href="#" class="card-link">Card link</a>'
             htmlString += '<a href="#" class="card-link">Another link</a>'
             htmlString += '</div>'
             htmlString += '</div>'
-
         }
-        animalContainer.insertAdjacentHTML("beforeend", htmlString)
+
+        festivalContainer.insertAdjacentHTML("beforeend", htmlString)
     };
         </script>
-        
-
     <footer>
     </footer>
 </html>

@@ -24,7 +24,7 @@ z-index: 10;
 .fest-box {
     margin-top: 50rem;
     width: 75%;
-    height: 40rem;
+    height: 500rem;
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -36,7 +36,7 @@ z-index: 10;
 }
 
 .dark-background {
-    background-color: #363636;
+    background-color: #101624;
 }
 
 .funkyred-background {
@@ -66,6 +66,7 @@ z-index: 10;
     left:0%;
     position: absolute;
     width:100%; 
+    z-index: -1;
 }
 
 video {
@@ -76,3 +77,27 @@ video {
 video.fillWidth {
     width: 100%; 
 }
+
+.top-banner {
+    height: 8rem;
+
+}
+
+span:hover {
+    color:  #2F9599;
+}
+
+.rock-out-img {
+    background-image: url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    
+
+}
+
+.background-fest {
+    height: 800rem;
+}   
