@@ -12,9 +12,11 @@
         <!-- Additional CSS must be placed after Bootstrap CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <link rel="stylesheet" href="css/styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <title>Next Music Fest</title>
+        
     </head>
-    <body class="dark-background" onload="showFestivalInfo()">
+    <body class="dark-background">
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top top-banner banner" style="background-color: black;">
             <div class="container">
                 <div class="col">
@@ -75,6 +77,7 @@
             <li class="nav-item"><a class="nav-link" href=""><span class="display-4 mr-3">Genre</span></a></li>
         </ul>
         </div>
+
     </div>
     </nav>
     <div class="fest-box">
@@ -84,39 +87,31 @@
 </div>
     </body>
         <script>
-            var festivalContainer = document.getElementById("festival-info");
-            var showFestivalInfo = function(){
-                var ourRequest = new XMLHttpRequest();
-            ourRequest.open('GET', 'js/data.json');
-            ourRequest.onload = function() {
-                var ourData = JSON.parse(ourRequest.responseText);
-                renderHTML(ourData);
-            };  
-            ourRequest.send();
-            };
-            function renderHTML(data) {
-            var htmlString = "";
-            for (i = 0; i < data.length; i++) {
-            htmlString += '<div class="card mb-4 p-3" style="width: 100%;">'
-            htmlString += '<img class="card-img-top" src="" alt="">'
-            htmlString += '<div class="card-body">'
-            htmlString += '<h5 class="card-title display-4">' + data[i].name + '</h5>'
-            htmlString += '<p class="card-text">Description Here</p></div>'
-            htmlString += '<ul class="list-group list-group-flush">'
-            htmlString += '<li class="list-group-item bg-transparent">' + 'Location:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + data[i].location + '</li>'
-            htmlString += '<li class="list-group-item bg-transparent">' + 'Attendees:&nbsp;&nbsp;&nbsp;' + data[i].attendees + '</li>'
-            htmlString += '<li class="list-group-item bg-transparent">' + 'Next Event:&nbsp;&nbsp;' + data[i].event + '</li>'
-            htmlString += '</ul>'
-            htmlString += '<div class="card-body">'
-            htmlString += '<a href="#" class="card-link">Card link</a>'
-            htmlString += '<a href="#" class="card-link">Another link</a>'
-            htmlString += '</div>'
-            htmlString += '</div>'
-        }
+            $.getJSON("js/data.json", function(data){
+                var htmlString = [];
+                $.each(data, function(index) {
+                    htmlString += '<div class="card mb-4 p-3" style="width: 100%;">'
+                    htmlString += '<img class="card-img-top" src="" alt="">'
+                    htmlString += '<div class="card-body">'
+                    htmlString += '<h5 class="card-title display-4">' + data[index].name + '</h5>'
+                    htmlString += '<p class="card-text">Description Here</p></div>'
+                    htmlString += '<ul class="list-group list-group-flush">'
+                    htmlString += '<li class="list-group-item bg-transparent">' + 'Location:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + data[index].location + '</li>'
+                    htmlString += '<li class="list-group-item bg-transparent">' + 'Attendees:&nbsp;&nbsp;&nbsp;' + data[index].attendees + '</li>'
+                    htmlString += '<li class="list-group-item bg-transparent">' + 'Next Event:&nbsp;&nbsp;' + data[index].event + '</li>'
+                    htmlString += '</ul>'
+                    htmlString += '<div class="card-body">'
+                    htmlString += '<a href="#" class="card-link">Card link</a>'
+                    htmlString += '<a href="#" class="card-link">Another link</a>'
+                    htmlString += '</div>'
+                    htmlString += '</div>'
+                });
+                $("#festival-info").html(htmlString);
 
-        festivalContainer.insertAdjacentHTML("beforeend", htmlString)
-    };
+            });
         </script>
+       
+        
     <footer>
     </footer>
 </html>
