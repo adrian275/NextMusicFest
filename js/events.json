@@ -1,0 +1,14 @@
+{
+    "events": {
+        "festivals": [
+            {"id":"38768509-coachella-2020",  "name":"Coachella"},
+            {"id":"39273923-boston-calling-music-festival-2020",  "name":"Boston Calling"},
+            {"id":"39314756-the-governors-ball-music-festival-2020", "name":"Governors Ball"}, 
+            {"id":"39339621-something-in-the-water-2020", "name":"Something In The Water"},
+            {"id":"39378995-bonnaroo-music--arts-festival-2020", "name":"Bonnaroo"},
+            {"id":"39376509-bottlerock-napa-valley-2020", "name":"BottleRock Napa Valley"},
+            {"id":"39078789-okeechobee-music--arts-festival-2020", "name":"Okeechobee"}
+            
+        ]
+    }
+}

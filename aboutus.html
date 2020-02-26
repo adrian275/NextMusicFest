@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans">
+
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans">
+        <link rel="stylesheet" href="css/styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>About Us</title>  
+    </head>
+    <body class="">
+       <ul id="z-info">
+        
+       </ul>
+    </body>
+        <script>
+            var $data = $('#z-info');
+            $(function(){
+                $.ajax({
+                    url: 'js/events.json',
+                    dataType: 'json', 
+                    type: 'GET',
+                    cache: false,
+                    success: function(data) {
+                        $(data.events.festivals).each(function (index, value) {
+                            $.ajax({
+                            type: 'GET',
+                            url: 'https://api.songkick.com/api/3.0/events/' + value.id +'.json?apikey=BcSVaxyGOG1IVR63',
+                            dataType: 'JSON',
+                            success: function(data) {
+                            //console.log('success', data);
+                            //console.log(data.resultsPage.results.event.displayName);
+                                $.each(data, function(i, item) {
+                                $data.append('<li>' + data.resultsPage.results.event.displayName +'</li>')
+                        });
+                    }
+                });          
+                        });
+                    }
+                });
+            });
+        </script>        
+    <footer>
+    </footer>
+</html>

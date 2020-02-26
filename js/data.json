@@ -14,18 +14,26 @@
     "location":"Indio, CA"
  },
  {
-    "id":"2", 
-    "name":"Coachella", 
+    "id":"3", 
+    "name":"Sasquatch", 
     "attendees":"250,000", 
     "event":"04/15/2020", 
-    "location":"Indio, CA"
+    "location":"Portland, OR"
  },
  {
-    "id":"2", 
-    "name":"Coachella", 
+    "id":"4", 
+    "name":"Bonaroo", 
     "attendees":"250,000", 
     "event":"04/15/2020", 
-    "location":"Indio, CA"
- }
+    "location":"Memphis, TN"
+ },
+ {
+   "id":"5", 
+   "name":"Cross", 
+   "attendees":"250,000", 
+   "event":"04/15/2020", 
+   "location":"San Diego, CA"
+}
 
 ]
+

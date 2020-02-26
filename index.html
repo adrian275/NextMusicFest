@@ -3,24 +3,23 @@
     <head>
         <!-- Required meta tags always come first -->
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />   
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans">
+
         <!-- Additional CSS must be placed after Bootstrap CSS -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans">
         <link rel="stylesheet" href="css/styles.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <title>Next Music Fest</title>
-        
+        <title>Next Music Fest</title>  
     </head>
     <body class="dark-background">
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top top-banner banner" style="background-color: black;">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top top-banner banner" style="background-color: black;">
             <div class="container">
                 <div class="col">
-                    <div class="collapse navbar-collapse pull-right" id="NextMusicFestNavBar">
+                    <div class="collapse navbar-collapse pull-right" id="FestNavBar">
                         <ul class="navbar-nav">
                             <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
@@ -34,7 +33,7 @@
                         </ul>
                     </div>
                 </div>
-                <button class="navbar-toggler button-background" type="button" data-toggle="collapse" data-target="#NextMusicFestNavBar">
+                <button class="navbar-toggler button-background" type="button" data-toggle="collapse" data-target="#FestNavBar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -43,41 +42,36 @@
         <img class="ml-5 mt-2 pull-left fixed-top" src="img/NextMusicFest_logo.svg" height="108" width="183" alt="">
     </div>
         <div id="video-container">
-            <video autoplay loop class="fillWidth fixed-top">
+            <div class="d-flex justify-content-center" data-vimeo-id="97209083" data-vimeo-controls="false" data-vimeo-background="true" data-vimeo-width="1280" data-vimeo-transparent="true" data-vimeo-playsinline="true" allowfullscreen></div>
+            <!-- <iframe src="https://player.vimeo.com/video/97209083?portrait=0" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+           <!--  <video id="myVideo" autoplay loop class="fillWidth fixed-top">
                 <source src="video/video.mp4" type="video/mp4"/>
                 Your browser does not support the video tag. I suggest you upgrade your browser.
-            </video>
+            </video> -->
         </div>
     </div>
-    <div class="w-75" style="height: 125px;">
-        
-    </div>
+    <div style="margin-top: 10rem;">
     <div class="info-container w-75 mx-auto pattern">
         <h1 class="display-1">Find</h1>
     </div>
     <div class="info-container w-75 mx-auto pattern funkyred-background ">
-        <h1 class="display-2">Your</h1>
+        <h1 class="display-2">Your Next </h1>
     </div>
     <div class="info-container w-75 mx-auto pattern">
-        <h1 class="display-3">Next</h1>
+        <h1 class="display-3">Music Experience</h1>
     </div>
-    <div class="info-container w-75 mx-auto pattern funkyblue-background ">
-        <h1 class="display-2">Music</h1>
-    </div>
-    <div class="info-container w-75 mx-auto pattern">
-        <h1 class="display-2">Experience</h1>
+
     </div>
     <div class="dark-background background-fest rock-out-img fill">
     <nav class="navbar navbar-expand-sm py-4">
-    <div class="container">
-        <div class="col-12">
+    <div class="container sticky">
+        <div class="col-12 dark-background w-100 rounded p-3">
         <ul class="navbar-nav">
-            <li class="nav-item active"><a class="" href="#"><span class="display-4 mr-3">Upcoming</span></a></li>
-            <li class="nav-item"><a class="nav-link" href=""><span class="display-4 mr-3">State</span></a></li>
-            <li class="nav-item"><a class="nav-link" href=""><span class="display-4 mr-3">Genre</span></a></li>
+            <li class="nav-item active mr-5"><a class="nav-link" href=""><h4 class="">Upcoming</h4></a></li>
+            <li class="nav-item mr-5"><a class="nav-link" href=""><h4 class="">State</h4></a></li>
+            <li class="nav-item"><a class="nav-link" href=""><h4 class="">Genre</h4></a></li>
         </ul>
-        </div>
-
+    </div>
     </div>
     </nav>
     <div class="fest-box">
@@ -106,10 +100,25 @@
                     htmlString += '</div>'
                     htmlString += '</div>'
                 });
-                $("#festival-info").html(htmlString);
+                $("#festival-info").append(htmlString);
 
             });
         </script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script src="{url}"></script>
+        <script>
+          var options = {
+            url: "https://vimeo.com/280815263",
+            width: 800
+          };
+        
+          var videoPlayer = new Vimeo.Player('myVideo', options);
+        
+          videoPlayer.on('play', function() {
+            console.log('Played the video');
+          });
+        </script>
+   
        
         
     <footer>
