@@ -1,14 +1,17 @@
 {
     "events": {
         "festivals": [
-            {"id":"38768509-coachella-2020",  "name":"Coachella"},
-            {"id":"39273923-boston-calling-music-festival-2020",  "name":"Boston Calling"},
-            {"id":"39314756-the-governors-ball-music-festival-2020", "name":"Governors Ball"}, 
-            {"id":"39339621-something-in-the-water-2020", "name":"Something In The Water"},
-            {"id":"39378995-bonnaroo-music--arts-festival-2020", "name":"Bonnaroo"},
-            {"id":"39376509-bottlerock-napa-valley-2020", "name":"BottleRock Napa Valley"},
-            {"id":"39078789-okeechobee-music--arts-festival-2020", "name":"Okeechobee"}
-            
+            {"id":"38768509-coachella-2020",  "name":"Coachella", "imgId":"38768509"},
+            {"id":"39273923-boston-calling-music-festival-2020",  "name":"Boston Calling", "imgId":"39273923"},
+            {"id":"39314756-the-governors-ball-music-festival-2020", "name":"Governors Ball", "imgId":"39314756"}, 
+            {"id":"39339621-something-in-the-water-2020", "name":"Something In The Water", "imgId":"39339621"},
+            {"id":"39378995-bonnaroo-music--arts-festival-2020", "name":"Bonnaroo", "imgId":"39378995"},
+            {"id":"39376509-bottlerock-napa-valley-2020", "name":"BottleRock Napa Valley", "imgId":"39376509"},
+            {"id":"39078789-okeechobee-music--arts-festival-2020", "name":"Okeechobee", "imgId":"39078789"}, 
+            {"id":"39285817-shaky-knees-festival-2020", "name":"Shaky Knees Festival", "imgId":"39285817"},
+            {"id":"39204082-epicenter-festival-2020", "name":"Epicenter Festival 2020", "imgId":"39204082"}
         ]
     }
+
+    
 }

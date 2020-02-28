@@ -69,6 +69,16 @@
         animalContainer.insertAdjacentHTML("beforeend", htmlString)
     };
 
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYWRyaWFuMjc1IiwiYSI6ImNpdm8yY3E1azAwdXQyb24yZmxsbHl1aDIifQ.USDLj5nTUv9bEr6YpkObBw';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-74.5, 40],
+    zoom: 9,
+    // causes pan & zoom handlers not to be applied, similar to
+    // .dragging.disable() and other handler .disable() funtions in Leaflet.
+    interactive: false
+    });
     
 
 

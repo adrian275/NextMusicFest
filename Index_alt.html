@@ -2,87 +2,65 @@
 <html lang="en">
 
     <head>
-        <!-- Required meta tags always come first -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />   
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-        <!-- Additional CSS must be placed after Bootstrap CSS -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-        <link rel="stylesheet" href="css/styles.css"/>
-        <title>NuCamp: A Better Way To Camp</title>
+                <!-- Required meta tags always come first -->
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1">   
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+                 <!-- build:css css/main.css -->
+                 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+                 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+                 <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+                 <link rel="stylesheet" href="css/styles.css">
+                 <!-- endbuild -->
+                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans">
+                
+                <style>
+                    body { margin: 0; padding: 0; }
+                    #map { position: relative; top: 0; bottom: 0; width: 100%; }
+                </style>
+                <title>Next Music Fest</title>  
     </head>
-    <div class="header-unit" style="margin-bottom: 800px;">
-        <header class="fixed-top dark-background banner">   
-            <div class="container p-5">
-                <div class="d-flex h-100 text-center">
-                    <div class="w-100 text-white">
-                        <img class="pull-left" src="img/NextMusicFest_logo.svg" height="90" width="154" alt="">
-                        <nav class="navbar navbar-expand-sm pull-right navbar-dark sticky-top">
-                            <div class="container">
-                                <div class="col">
-                                    <div class="collapse navbar-collapse pull-right" id="nucampNavbar">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
-                                            <li><a data-toggle="modal" data-target="#loginModal">
-                                                <span class="navbar-text ml-auto">
-                                                    <i class="fa fa-sign-in fa-2x nav-item"></i>
-                                                </span>
-                                            </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <button class="navbar-toggler bg-xs-light bg-md-dark" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>  
-        </header>
-        <div>
-        <div id="video-container" style="z-index: -1;">
-            <video autoplay muted loop class="fillwidth">
-                <source src="video/video.mp4" type="video/mp4"> 
-                Your browser does not support the video tag. I suggest you upgrade your browser.
-            </video>
-        </div><!-- end video-container -->
-       
-    </div><!-- end .header-unit -->
-    
-    <body class="dark-background">
-        <!-- <div class="col-12 festival-img mx-auto img-fluid" style="height: 1000px">
-        </div> -->
-        
-              <!-- <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg">
-              <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
-              <source src="http://techslides.com/demos/sample-videos/small.3gp" type="video/3gp"> -->
-              <!-- <img src=" http://placehold.it/350x150" alt="test alt img" /> -->
-        <div class="containers mx-5">
-        <div class="card m-4 p-5">
-            <h5 class="card-title display-4">ACL</h5>
-            <a data-flickr-embed="true" href="https://www.flickr.com/photos/kutxaustintx/30110185821/in/photolist-MSJzdR-ztbB2u-pmB26x-My5HoS-aoY5yc-62hpKp-8HGMqD-8JVXQo-zugqg8-yrz45M-gRR6xM-pCzG3p-5q2BUM-77dmNy-pkBdZD-7fcea-5pHW6n-2kqvFN-pA5VvC-74ZUc5-z8npBb-z8oDHy-zdbEPf-yxKity-anTMMq-oKEuPX-z8syuR-pBQaGr-z8tQAM-54X16-yxKrbC-zd9LyC-7et5t-z8oLMy-apisGb-djbkxX-75iEn3-yxJqkG-7fce9-djbk1S-gLotHw-54WGF-5ezQp-z8nEbm-54WdH-zqQJ6v-CzyvaV-M3D5WF-gNccK9-biGZjF" title="Austin City Limits Music Festival 2016"><img src="https://live.staticflickr.com/7513/30110185821_20e8e44329_w.jpg" width="400" height="270" alt="Austin City Limits Music Festival 2016"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="card m-4 p-5">
-            <h5 class="card-title display-4">Coachella</h5>
-            <a data-flickr-embed="true" href="https://www.flickr.com/photos/kutxaustintx/30110185821/in/photolist-MSJzdR-ztbB2u-pmB26x-My5HoS-aoY5yc-62hpKp-8HGMqD-8JVXQo-zugqg8-yrz45M-gRR6xM-pCzG3p-5q2BUM-77dmNy-pkBdZD-7fcea-5pHW6n-2kqvFN-pA5VvC-74ZUc5-z8npBb-z8oDHy-zdbEPf-yxKity-anTMMq-oKEuPX-z8syuR-pBQaGr-z8tQAM-54X16-yxKrbC-zd9LyC-7et5t-z8oLMy-apisGb-djbkxX-75iEn3-yxJqkG-7fce9-djbk1S-gLotHw-54WGF-5ezQp-z8nEbm-54WdH-zqQJ6v-CzyvaV-M3D5WF-gNccK9-biGZjF" title="Austin City Limits Music Festival 2016"><img src="https://live.staticflickr.com/7513/30110185821_20e8e44329_w.jpg" width="400" height="270" alt="Austin City Limits Music Festival 2016"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>  
+          </nav>
     </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
     <footer>
     
     </footer>
