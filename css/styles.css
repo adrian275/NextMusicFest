@@ -88,8 +88,11 @@ z-index: 10;
     background-color: black;
     z-index: -1;
     margin: 0 auto;
-    position: aboslute;
+    position: static;
     top: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     
 }
 
@@ -145,4 +148,6 @@ background-position: center;
 background-repeat: no-repeat;
 width: 100%;
 }
+
+
 

@@ -49,15 +49,21 @@
              <div>
             hello
         </div>
-        <div class="dark-background background-fest rock-out-img fill img-fluid d-flex justify-content-center p-5" style="height: 800px; background-color: white;">
-            <div class="card d-flex align-items-center align-content-center" style="width: 75%; height:30rem; margin-top: 7rem;">
+        <div class="dark-background background-fest rock-out-img fill img-fluid d-flex justify-content-center p-5" style="height: 100%; background-color: white;">
+            <div class="card d-flex align-items-center align-content-center" style="width: 75%; height:100%; margin-top: 7rem;">
                 <div class="card-body p-5">
                   <h5 class="card-title display-3">Pick My Next Music Experience</h5>
                   <h6 class="card-subtitle mb-2 text-muted"></h6>
                   <p class="card-text">Don't want to sift through the endless list of festivals.  Let us pick one for you. 
                 </p>
-                  <br>
-            </br>
+
+                  <a class="mx-auto col-12 btn text-white bg-primary" type="button" onclick="timer();">Roll The Dice</a>
+                  
+                    <div><h2 id="ready" class="display-4 text-center">Are you ready?</h2>  <span id="countdown" class="text-center display-4"></span></div>
+                    <div id="random-festival" class="text-center">
+                      
+                    </div>
+                
            
                 </div>
               </div>

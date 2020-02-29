@@ -9,7 +9,13 @@
             {"id":"39376509-bottlerock-napa-valley-2020", "name":"BottleRock Napa Valley", "imgId":"39376509", "dateStart":"2020-05-22", "state":"CA"},
             {"id":"39078789-okeechobee-music--arts-festival-2020", "name":"Okeechobee", "imgId":"39078789", "dateStart":"2020-03-05", "state":"FL"}, 
             {"id":"39285817-shaky-knees-festival-2020", "name":"Shaky Knees Festival", "imgId":"39285817", "dateStart":"2020-05-01", "state":"GA"},
-            {"id":"39204082-epicenter-festival-2020", "name":"Epicenter Festival 2020", "imgId":"39204082", "dateStart":"2020-05-01", "state":"NC"}
+            {"id":"39204082-epicenter-festival-2020", "name":"Epicenter Festival 2020", "imgId":"39204082", "dateStart":"2020-05-01", "state":"NC"},
+            {"id":"39204092-welcome-to-rockville-2020", "name":"Welcome To Rockville", "imgId":"39204092", "dateStart":"2020-05-08", "state":"FL"},
+            {"id":"39201224-sonic-temple-art--music-festival-2020", "name":"Sonic Temple Art and Music Festival", "imgId":"39201224", "dateStart":"20200515", "state":""},
+            {"id":"39497055-lovers--friends-2020", "name":"Lovers & Friends", "imgId":"39497055", "dateStart":"20200509", "state":"CA"},
+            {"id":"39179304-m3f-festival-2020", "name":"M3F Festival", "imgId":"39179304", "dateStart":"20200306", "state":"AZ"},
+            {"id":"9162649-innings-festival-2020", "name":"Inning's Festival", "imgId":"9162649", "dateStart":"20200229", "state":"AZ"},
+            {"id":"39226043-sweetwater-420-festival-2020", "name":"Sweetwater 420 Festival", "imgId":"39226043", "dateStart":"20200424", "state":"GA"}
         ]
     }
 
