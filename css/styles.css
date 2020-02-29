@@ -24,9 +24,10 @@ z-index: 10;
 .fest-box {
     margin-top: 50rem;
     width: 75%;
-    height: 2000px;
+    height: 100%;
     margin: 0 auto;
     border-radius: 10px;
+    background-color: transparent;
 }
 
 .info-container h1 {
@@ -63,11 +64,9 @@ z-index: 10;
 }
 
 #video-container {
-    
-    
-    
-    
+    background-color: black;
     z-index: -1;
+    margin: 0 auto;
 }
 
 video.fillWidth {
@@ -93,7 +92,7 @@ h4:hover {
 }
 
 .background-fest {
-    height: auto;
+    height: 100%;
 }   
 
 ul span {

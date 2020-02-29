@@ -22,15 +22,11 @@
         <title>Next Music Fest</title>  
     </head>
     <body>
-        <div id="video-container" class="d-flex justify-content-center align-items-start">
-            <div class="" data-vimeo-id="97209083" data-vimeo-controls="false" data-vimeo-background="true" data-vimeo-width="1400" data-vimeo-transparent="true" data-vimeo-playsinline="true" data-vimeo-allowfullscreen="true"></div>
-            <!-- <iframe src="https://player.vimeo.com/video/97209083?portrait=0" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
-           <!--  <video id="myVideo" autoplay loop class="fillWidth fixed-top">
-                <source src="video/video.mp4" type="video/mp4"/>
-                Your browser does not support the video tag. I suggest you upgrade your browser.
-            </video> -->
+        <div style="height: 131px; background-color: black;"></div>
+        <div id="video-container" class="mx-auto">
+            <div data-vimeo-id="97209083" data-vimeo-controls="false" data-vimeo-transparent="false" data-vimeo-background="true" data-vimeo-width="1280" data-vimeo-transparent="true" data-vimeo-playsinline="true" data-vimeo-responsive="true" allowfullscreen></div>
         </div>  
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark jumbotron fixed-top banner">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top banner">
             <img class="ml-5 mt-2 pull-left" src="img/NextMusicFest_logo.svg" height="108" width="183" alt="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" data-vimeo-muted="true">
               <span class="navbar-toggler-icon"></span>
@@ -51,26 +47,25 @@
             </div>
             </div>
           </nav>
-          <div class="dark-background background-fest rock-out-img fill">
+          <div class="dark-background background-fest rock-out-img fill img-fluid">
             <nav class="navbar navbar-expand-sm py-4">
-            <div class="container sticky">
-                <div class="col-12 dark-background w-100 rounded p-3">
+
+                <div class="col-10 mx-auto dark-background w-100 rounded p-3">
                 <ul class="navbar-nav">
                     <li class="nav-item active mr-5"><a class="nav-link" href=""><h4 class="">Upcoming</h4></a></li>
                     <li class="nav-item mr-5"><a class="nav-link" href=""><h4 class="">State</h4></a></li>
                     <li class="nav-item"><a class="nav-link" href=""><h4 class="">Genre</h4></a></li>
                 </ul>
             </div>
-            </div>
             </nav>
-            <div class="fest-box">
+            <div class="fest-box p-5">
               <div id="festival-info">
                   
               </div> 
             </div>
         </div>
     </body>
-    <script>
+<!--     <script>
            var $data = $('#festival-info');
            $(function(){
                $.ajax({
@@ -89,17 +84,15 @@
                            //console.log(data.resultsPage.results.event.displayName);
                                    var htmlString = [];
                                    $.each(dataEvent, function(i, item) {
-                                       htmlString += '<div class="card mb-4 p-3" style="width: 100%;">'
-                                       htmlString += '<img class="card-img-top" src="" alt="">'
+                                       htmlString += '<div class="card" style="width: 100%;">'
+                                       htmlString += '<img class="mt-5 card-img-top img-fluid img-thumbnail" src="https://images.sk-static.com/images/media/profile_images/events/' + value.imgId +'/huge_avatar"></img>'
                                        htmlString += '<div class="card-body">'
-                                       htmlString += '<h5 class="card-title display-4">' + dataEvent.resultsPage.results.event.series.displayName  + '</h5>'
-                                       htmlString += '<div id="map" style="width: 100px; height: 100px;"></div>'
+                                       htmlString += '<h5 class="card-title display-4">' + dataEvent.resultsPage.results.event.series.displayName  +  '</h5>'
                                        htmlString += '<p class="display-5 text-primary"> Upcoming Event Dates: ' + dataEvent.resultsPage.results.event.start.date + ' to ' + dataEvent.resultsPage.results.event.end.date + '</p>'
                                        htmlString += '<img class="mt-5 img-fluid img-thumbnail" src="https://images.sk-static.com/images/media/profile_images/events/' + value.imgId +'/huge_avatar"></img>'
-                                       
                                        htmlString += '<ul class="list-group list-group-flush">'
                                        htmlString += '<li class="list-group-item bg-transparent">' + 'Location:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + dataEvent.resultsPage.results.event.location.city + '</li>'
-                                       htmlString += '<li class="list-group-item bg-transparent">' + 'Popularity:&nbsp;&nbsp;&nbsp;' + dataEvent.resultsPage.results.event.popularity + '</li>'
+                                       htmlString += '<li class="list-group-item bg-transparent">' + 'Popularity:&nbsp;&nbsp;&nbsp;' + Math.round(Number(dataEvent.resultsPage.results.event.popularity)) * 100 + '%' + '</li>'
                                        htmlString += '<li class="list-group-item bg-transparent">' + 'More Info:&nbsp;&nbsp;' + '<a href="' + dataEvent.resultsPage.results.event.uri + '" class="card-link">Songkick Page</a>' + '</li>'
                                        htmlString += '</ul>'
                                        htmlString += '<div class="card-body">'
@@ -116,7 +109,7 @@
                    }
                });
            });
-       </script>
+       </script> -->
         <script src="https://player.vimeo.com/api/player.js"></script>
         <script>
           var options = {
@@ -140,5 +133,22 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="" href="#">Home</a></li>
+                        <li><a href="aboutus.html">Pick My Best</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+        <div class="col-6 col-sm-5 offset-1 text-center">
+            <h5>Social</h5>
+            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+        </div>
     </footer>
 </html>
