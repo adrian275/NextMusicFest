@@ -1,17 +1,18 @@
 {
     "events": {
         "festivals": [
-            {"id":"38768509-coachella-2020",  "name":"Coachella", "imgId":"38768509"},
-            {"id":"39273923-boston-calling-music-festival-2020",  "name":"Boston Calling", "imgId":"39273923"},
-            {"id":"39314756-the-governors-ball-music-festival-2020", "name":"Governors Ball", "imgId":"39314756"}, 
-            {"id":"39339621-something-in-the-water-2020", "name":"Something In The Water", "imgId":"39339621"},
-            {"id":"39378995-bonnaroo-music--arts-festival-2020", "name":"Bonnaroo", "imgId":"39378995"},
-            {"id":"39376509-bottlerock-napa-valley-2020", "name":"BottleRock Napa Valley", "imgId":"39376509"},
-            {"id":"39078789-okeechobee-music--arts-festival-2020", "name":"Okeechobee", "imgId":"39078789"}, 
-            {"id":"39285817-shaky-knees-festival-2020", "name":"Shaky Knees Festival", "imgId":"39285817"},
-            {"id":"39204082-epicenter-festival-2020", "name":"Epicenter Festival 2020", "imgId":"39204082"}
+            {"id":"38768509-coachella-2020",  "name":"Coachella", "imgId":"38768509", "dateStart":"2020-04-17", "state":"CA"},
+            {"id":"39273923-boston-calling-music-festival-2020",  "name":"Boston Calling", "imgId":"39273923", "dateStart":"2020-05-22", "state":"MA"},
+            {"id":"39314756-the-governors-ball-music-festival-2020", "name":"Governors Ball", "imgId":"39314756", "dateStart":"2020-06-05", "state":"NY"}, 
+            {"id":"39339621-something-in-the-water-2020", "name":"Something In The Water", "imgId":"39339621", "dateStart":"2020-04-20", "state":"VA"},
+            {"id":"39378995-bonnaroo-music--arts-festival-2020", "name":"Bonnaroo", "imgId":"39378995", "dateStart":"2020-06-11", "state":"TN"},
+            {"id":"39376509-bottlerock-napa-valley-2020", "name":"BottleRock Napa Valley", "imgId":"39376509", "dateStart":"2020-05-22", "state":"CA"},
+            {"id":"39078789-okeechobee-music--arts-festival-2020", "name":"Okeechobee", "imgId":"39078789", "dateStart":"2020-03-05", "state":"FL"}, 
+            {"id":"39285817-shaky-knees-festival-2020", "name":"Shaky Knees Festival", "imgId":"39285817", "dateStart":"2020-05-01", "state":"GA"},
+            {"id":"39204082-epicenter-festival-2020", "name":"Epicenter Festival 2020", "imgId":"39204082", "dateStart":"2020-05-01", "state":"NC"}
         ]
     }
 
     
+
 }
